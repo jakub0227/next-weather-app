@@ -1,4 +1,4 @@
-# TypeScript Next.js example
+# Next.js Weather-APP
 
 This is a really simple project that shows the usage of Next.js with TypeScript, Chakra-UI, openweathermaps.org API.
 
