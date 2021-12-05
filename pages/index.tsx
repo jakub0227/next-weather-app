@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import {
-  Button,  
+  Button,
   Flex,
   Stack,
   Text,
@@ -10,7 +10,7 @@ import {
 import Head from "next/head";
 import Link from "next/link";
 
-const IndexPage:FC = () => {
+const IndexPage: FC = () => {
   return (
     <>
       <Head>
@@ -19,11 +19,13 @@ const IndexPage:FC = () => {
       <Flex
         w={"full"}
         h={"100vh"}
+        backgroundColor="teal.100"
+        backgroundBlendMode="multiply"
         backgroundImage={
-          "url(https://images.unsplash.com/photo-1608671611568-895aaf8ec972?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1473&q=80)"
+          "url(https://images.unsplash.com/photo-1562155955-1cb2d73488d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80)"
         }
-        backgroundSize={"cover"}
-        backgroundPosition={"center center"}
+        backgroundSize="cover"
+        backgroundPosition="center"
       >
         <VStack
           w={"full"}

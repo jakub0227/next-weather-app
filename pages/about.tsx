@@ -20,7 +20,7 @@ const ACCORDION_DATA: AccordionItemType[] = [
   },
   {
     id: 2,
-    title: "Additional informations:",
+    title: "Additional information:",
     descriptionTxt:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Utenim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   },

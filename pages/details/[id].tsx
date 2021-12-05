@@ -33,7 +33,6 @@ interface DetailsProps {
 }
 
 const DetailsPage: FC<DetailsProps> = (props) => {
-  console.log(props);
   return (
     <>
       <Head>
@@ -60,7 +59,7 @@ const DetailsPage: FC<DetailsProps> = (props) => {
           </Text>
           <AspectRatio maxW="550px" ratio={4 / 3}>
             <iframe
-              src={`https://www.google.com/maps?q=${props.city.coord.lat},${props.city.coord.lon}&output=embed&z=8`}
+              src={`https://www.google.com/maps?q=${props.city.coord.lat},${props.city.coord.lon}&output=embed&z=8`}              
               style={{
                 border: "2px solid teal",
                 borderRadius: "15px",
