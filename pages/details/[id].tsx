@@ -18,7 +18,7 @@ import {
 } from "@chakra-ui/react";
 import Link from "next/link";
 import { SearchCityInput } from "../../components/SearchCityInput";
-import { CityWeatherDailyType } from "../../types/CityWeatherDailyType";
+import { CityWeatherDailyType } from "../../types/models/CityWeatherDailyType";
 import moment from "moment-timezone";
 
 interface DetailsProps {
