@@ -2,7 +2,6 @@ import axios from "axios";
 import { GetServerSideProps } from "next";
 import Head from "next/head";
 import React, { FC } from "react";
-import { API_KEY } from "../../API/API";
 import { CityWeatherType } from "../../types/models/CityWeatherType";
 import {
   Box,
@@ -178,13 +177,13 @@ export const getServerSideProps: GetServerSideProps<DetailsProps> = async (
   try {
     const resCity = (
       await axios.get(
-        `https://api.openweathermap.org/data/2.5/weather?id=${ctx.query.id}&units=metric&APPID=${API_KEY}`
+        `https://api.openweathermap.org/data/2.5/weather?id=${ctx.query.id}&units=metric&APPID=${process.env.API_KEY}`
       )
     ).data as CityWeatherType;
 
     const resDailyWeather = (
       await axios.get(
-        `https://api.openweathermap.org/data/2.5/onecall?lat=${resCity.coord.lat}&lon=${resCity.coord.lon}&exclude=minutely&units=metric&APPID=${API_KEY}`
+        `https://api.openweathermap.org/data/2.5/onecall?lat=${resCity.coord.lat}&lon=${resCity.coord.lon}&exclude=minutely&units=metric&APPID=${process.env.API_KEY}`
       )
     ).data as CityWeatherDailyType;
     return {
