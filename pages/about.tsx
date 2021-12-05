@@ -16,7 +16,7 @@ const ACCORDION_DATA: AccordionItemType[] = [
     id: 1,
     title: "About the app:",
     descriptionTxt:
-      "App built using Next.js / TypeScript / Chakra-UI with implementation of API by `openweathermap.org`",
+      "App built using Next.js / TypeScript / Chakra-UI with integrated API by `openweathermap.org`",
   },
   {
     id: 2,
