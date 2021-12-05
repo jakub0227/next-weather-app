@@ -108,7 +108,7 @@ const DetailsPage: FC<DetailsProps> = (props) => {
                   {moment
                     .unix(dailyWeather.dt)
                     .tz(props.dailyForecast.timezone)
-                    .format("dddd")}
+                    .format(`${"dddd"} (DD-MM-YYYY)`)}
                   :
                 </Text>
                 <Text>Max Temp: {dailyWeather.temp.max.toFixed(0)}°C</Text>
