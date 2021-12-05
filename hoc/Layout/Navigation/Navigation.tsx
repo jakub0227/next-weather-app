@@ -23,6 +23,7 @@ export default function App() {
         px={{ base: 2, sm: 4 }}
         py={4}
         shadow="lg"
+        zIndex="popover"
       >
         <Flex alignItems="center" justifyContent="space-between" mx="auto">
           <Flex>
