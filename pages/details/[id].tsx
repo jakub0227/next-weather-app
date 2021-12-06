@@ -68,7 +68,7 @@ const DetailsPage: FC<DetailsProps> = (props) => {
               allowFullScreen
             />
           </AspectRatio>
-          <Accordion defaultIndex={[0]} allowMultiple>
+          <Accordion defaultIndex={[0]} allowMultiple my={10}>
             <AccordionItem>
               <Box p={5} border="solid 2px teal" borderRadius={25} my={5}>
                 <AccordionButton>
@@ -89,7 +89,7 @@ const DetailsPage: FC<DetailsProps> = (props) => {
                       alt="Weather Icon"
                     />
                   </Box>
-                  <SimpleGrid columns={{ base: 2, md: 2 }} spacing={4}>
+                  <SimpleGrid columns={{ base: 1, sm: 1 }} spacing={4}>
                     <Text my={2}>
                       Temperature now: {props.city.main.temp.toFixed(0)} °C
                     </Text>
@@ -138,10 +138,10 @@ const DetailsPage: FC<DetailsProps> = (props) => {
                           :
                         </Text>
                         <Text>
-                          Max Temp: {dailyWeather.temp.max.toFixed(0)}°C
+                          Max Temp: {dailyWeather.temp.max.toFixed(0)} °C
                         </Text>
                         <Text>
-                          Min Temp: {dailyWeather.temp.min.toFixed(0)}°C
+                          Min Temp: {dailyWeather.temp.min.toFixed(0)} °C
                         </Text>
                         <Text>
                           Forecast: {dailyWeather.weather[0].description}
